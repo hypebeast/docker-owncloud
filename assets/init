@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+INSTALL_DIR="/home/owncloud/owncloud"
+CONFIG_DIR="${INSTALL_DIR}/config"
+DATA_DIR="/home/owncloud/data"
+LOG_DIR="/var/log/owncloud"
+SSL_CERTIFICATES_DIR="${DATA_DIR}/certs"
+
+SETUP_DIR="/app/setup"
+SYSCONF_TEMPLATES_DIR="${SETUP_DIR}/config"
+USERCONF_TEMPLATES_DIR="${DATA_DIR}/config"
+
+DB_HOST=${DB_HOST:-}
+DB_PORT=${DB_PORT:-}
+DB_NAME=${DB_NAME:-}
+DB_USER=${DB_USER:-}
+DB_PASS=${DB_PASS:-}
+DB_TYPE=${DB_TYPE:-}
+
+OWNCLOUD_PORT=${OWNCLOUD_PORT:-}
+OWNCLOUD_HTTPS=${OWNCLOUD_HTTPS:-false}
+OWNCLOUD_RELATIVE_URL_ROOT=${OWNCLOUD_RELATIVE_URL_ROOT:-}
